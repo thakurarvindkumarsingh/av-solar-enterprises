@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Solar Enterprises | Best Solar Energy Company in Lucknow</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        solarGreen: '#16a34a',
+                        solarDarkGreen: '#15803d',
+                        solarYellow: '#eab308',
+                        solarDark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative">
+
+    <!-- TOP BAR -->
+    <div class="bg-solarDark text-slate-300 text-xs sm:text-sm py-2.5 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <a href="tel:+919580325626" class="flex items-center gap-1.5 hover:text-solarYellow transition">
+                    <i class="fa-solid fa-phone text-solarYellow"></i> +91 95803 25626
+                </a>
+                <a href="mailto:avsolarenterprises@gmail.com" class="flex items-center gap-1.5 hover:text-solarYellow transition">
+                    <i class="fa-solid fa-envelope text-solarYellow"></i> avsolarenterprises@gmail.com
+                </a>
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-solarYellow"></i> Lucknow, UP
+                </span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-solarGreen text-white text-xs px-2.5 py-0.5 rounded-full font-medium shadow-sm">PM Surya Ghar Authorized Partner</span>
+                <div class="flex gap-2.5">
+                    <a href="https://facebook.com" target="_blank" class="hover:text-solarYellow transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-solarYellow transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919580325626" target="_blank" class="hover:text-solarYellow transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-2.5">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-solarGreen to-solarYellow flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    <i class="fa-solid fa-solar-panel"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-solarDark">AV <span class="text-solarGreen">SOLAR</span></span>
+                    <span class="block text-[10px] uppercase tracking-widest text-slate-500 font-semibold -mt-1">Enterprises</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-slate-600 text-sm">
+                <a href="#home" class="hover:text-solarGreen transition">Home</a>
+                <a href="#calculator" class="hover:text-solarGreen transition">Subsidy Calculator</a>
+                <a href="#services" class="hover:text-solarGreen transition">Services</a>
+                <a href="#team" class="hover:text-solarGreen transition">Our Team</a>
+                <a href="#gallery" class="hover:text-solarGreen transition">Gallery</a>
+                <a href="#map-section" class="hover:text-solarGreen transition">Location</a>
+                <a href="#contact" class="hover:text-solarGreen transition">Contact</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="#contact" class="bg-solarGreen hover:bg-solarDarkGreen text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-md transition flex items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="lg:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 font-medium text-slate-700 shadow-xl">
+            <a href="#home" class="block hover:text-solarGreen transition">Home</a>
+            <a href="#calculator" class="block hover:text-solarGreen transition">Subsidy Calculator</a>
+            <a href="#services" class="block hover:text-solarGreen transition">Services</a>
+            <a href="#team" class="block hover:text-solarGreen transition">Our Team</a>
+            <a href="#gallery" class="block hover:text-solarGreen transition">Gallery</a>
+            <a href="#map-section" class="block hover:text-solarGreen transition">Location</a>
+            <a href="#contact" class="block hover:text-solarGreen transition">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="block text-center bg-solarGreen text-white font-bold px-4 py-3 rounded-xl text-sm shadow">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-bg text-white py-20 sm:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-solarGreen/20 border border-solarGreen/40 text-solarYellow px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-6">
+                    <i class="fa-solid fa-award"></i> Uttar Pradesh's Premier Solar EPC Contractor
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Power Your Home & Business with <span class="text-solarYellow">Clean Solar Energy</span>
+                </h1>
+                <p class="text-slate-300 text-base sm:text-xl font-normal leading-relaxed mb-8">
+                    Cut electricity bills to near zero, claim up to ₹78,000 in government subsidies, and enjoy 25 years of reliable green energy with <strong class="text-white">AV Solar Enterprises</strong> in Lucknow.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#calculator" class="bg-solarYellow hover:bg-yellow-500 text-solarDark font-bold px-8 py-4 rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-calculator"></i> Calculate Subsidy
+                    </a>
+                    <a href="#contact" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl text-center backdrop-blur transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Book Free Site Survey
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trust Badges & Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-900/80 backdrop-blur border border-slate-700/60 p-6 rounded-2xl shadow-xl">
+                <div class="text-center sm:text-left">
+                    <div class="text-3xl font-extrabold text-solarYellow mb-1">1,000+</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Successful Installations</div>
+                </div>
+                <div class="text-center sm:text-left">
+                    <div class="text-3xl font-extrabold text-solarYellow mb-1">₹78,000</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Govt. Subsidy Support</div>
+                </div>
+                <div class="text-center sm:text-left">
+                    <div class="text-3xl font-extrabold text-solarYellow mb-1">25 Years</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Performance Warranty</div>
+                </div>
+                <div class="text-center sm:text-left">
+                    <div class="text-3xl font-extrabold text-solarYellow mb-1">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-400">Net Metering Guarantee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SOLAR SUBSIDY CALCULATOR -->
+    <section id="calculator" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-solarGreen font-bold text-sm tracking-wider uppercase bg-green-50 px-3 py-1 rounded-full border border-green-200">PM Surya Ghar Yojana</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-solarDark mt-3 mb-4">Interactive Solar Subsidy & Savings Calculator</h2>
+                <p class="text-slate-600">Enter your average monthly electricity bill or units consumed to instantly calculate your recommended system size, government subsidy, and monthly savings.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-900 to-solarDark rounded-3xl p-6 sm:p-12 text-white shadow-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Calculator Inputs -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Average Monthly Electricity Bill (₹)</label>
+                        <input type="range" id="billInput" min="1000" max="15000" step="500" value="3500" class="w-full accent-solarGreen cursor-pointer" oninput="calculateSolar()">
+                        <div class="flex justify-between text-sm font-bold text-solarYellow mt-2">
+                            <span>₹1,000</span>
+                            <span id="billDisplay" class="text-white font-extrabold text-lg bg-slate-800 px-3 py-1 rounded-lg border border-slate-700">₹3,500 /mo</span>
+                            <span>₹15,000+</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+                            <span class="block text-xs text-slate-400 mb-1">Recommended System</span>
+                            <span id="recSize" class="text-2xl font-extrabold text-solarYellow">3 kW</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+                            <span class="block text-xs text-slate-400 mb-1">Estimated Monthly Units</span>
+                            <span id="recUnits" class="text-2xl font-extrabold text-solarGreen">360 Units</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-solarGreen/10 border border-solarGreen/30 p-4 rounded-xl text-xs sm:text-sm text-slate-300 space-y-2">
+                        <div class="flex items-center gap-2 text-solarYellow font-semibold">
+                            <i class="fa-solid fa-circle-check"></i> PM Surya Ghar Benefit Notice:
+                        </div>
+                        <p>Get direct bank subsidy transfer: <strong>₹30,000 for 1kW</strong>, <strong>₹60,000 for 2kW</strong>, and <strong>₹78,000 max for 3kW & above</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Calculator Output / Summary Card -->
+                <div class="lg:col-span-6 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl space-y-6">
+                    <h3 class="text-xl font-bold text-solarDark border-b pb-3 flex items-center justify-between">
+                        <span>Financial Breakdown</span>
+                        <span class="text-xs bg-green-100 text-solarGreen px-2.5 py-1 rounded-full font-semibold">Instant Estimate</span>
+                    </h3>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-600">Estimated Gross System Cost:</span>
+                            <span id="grossCost" class="font-bold text-slate-800">₹1,80,000</span>
+                        </div>
+                        <div class="flex justify-between items-center text-solarGreen">
+                            <span class="font-medium">Govt. Subsidy (Estimated):</span>
+                            <span id="estSubsidy" class="font-bold">- ₹78,000</span>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-slate-200 pt-3">
+                            <span class="font-bold text-solarDark text-base">Net Investment Required:</span>
+                            <span id="netCost" class="font-extrabold text-solarDark text-lg">₹1,02,000</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            <span class="text-slate-700 font-semibold">Est. Monthly Savings:</span>
+                            <span id="estSavings" class="font-extrabold text-solarYellow bg-slate-900 px-3 py-1 rounded-lg text-base">₹3,150 /mo</span>
+                        </div>
+                        <div class="flex justify-between items-center text-xs text-slate-500 pt-1">
+                            <span>Estimated Payback Period:</span>
+                            <span id="paybackPeriod" class="font-bold text-slate-700">~2.8 Years</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="block w-full text-center bg-solarGreen hover:bg-solarDarkGreen text-white font-bold py-3.5 rounded-xl transition shadow-md">
+                        Claim This Subsidy & Book Consultation
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-solarGreen font-bold text-sm tracking-wider uppercase bg-green-100 px-3 py-1 rounded-full">Our Core Offerings</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-solarDark mt-3 mb-4">Comprehensive Solar Solutions</h2>
+                <p class="text-slate-600">Engineered for maximum power generation, durability, and trouble-free operation for homes, businesses, and farms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-green-50 text-solarGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-solarGreen group-hover:text-white transition">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Residential Rooftop Solar</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Customized rooftop setups (1kW to 10kW+) for independent homes and housing societies in Lucknow. Reduce electricity bills and qualify for direct central subsidies.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-solarYellow flex items-center justify-center text-2xl mb-6 group-hover:bg-solarYellow group-hover:text-solarDark transition">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Commercial & Industrial Solar</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            High-capacity grid-tied solar power plants for factories, hospitals, hotels, and schools to dramatically lower overhead operating expenses.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-green-50 text-solarGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-solarGreen group-hover:text-white transition">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Hybrid & Off-Grid Inverters</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Advanced battery-backed solar inverters ensuring seamless power backup during grid outages alongside normal daylight generation.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-solarYellow flex items-center justify-center text-2xl mb-6 group-hover:bg-solarYellow group-hover:text-solarDark transition">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Solar Water Heaters</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Durable ETC and FPC solar water heating systems for residential bungalows, hostels, and commercial guest houses.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-green-50 text-solarGreen flex items-center justify-center text-2xl mb-6 group-hover:bg-solarGreen group-hover:text-white transition">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Subsidy & Net Metering Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Hassle-free end-to-end documentation handling for PM Surya Ghar portal registration and UPPCL bi-directional net meter installation.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-solarYellow flex items-center justify-center text-2xl mb-6 group-hover:bg-solarYellow group-hover:text-solarDark transition">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-solarDark mb-3">Maintenance & Panel Cleaning</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Routine preventive maintenance, robotic/manual solar panel cleaning, and performance inspection to guarantee peak generation year-round.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-solarGreen font-semibold text-sm hover:underline">
+                        Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET OUR EXPERT TEAM -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-solarGreen font-bold text-sm tracking-wider uppercase bg-green-50 px-3 py-1 rounded-full border border-green-200">Leadership & Field Experts</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-solarDark mt-3 mb-4">Meet Our Expert Team in Lucknow</h2>
+                <p class="text-slate-600">Our experienced professionals manage everything from technical engineering and subsidy paperwork to seamless installation.</p>
+            </div>
+
+            <!-- FOUNDER CARD -->
+            <div class="max-w-2xl mx-auto mb-12 bg-gradient-to-r from-solarDark to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-2xl border-2 border-solarYellow flex flex-col sm:flex-row items-center gap-6">
+                <div class="relative shrink-0">
+                    <img src="assets/founder.jpg" alt="Founder AV Solar" class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover border-4 border-solarYellow shadow-lg" onerror="this.src='https://placehold.co/180x180/16a34a/ffffff?text=Founder'">
+                    <span class="absolute -bottom-2 -right-2 bg-solarYellow text-solarDark text-xs px-3 py-1 rounded-full font-extrabold uppercase shadow">Founder</span>
+                </div>
+                <div class="text-center sm:text-left space-y-2">
+                    <span class="text-solarYellow text-xs font-bold uppercase tracking-wider">Managing Director & Founder</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Amit Verma</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Leading AV Solar Enterprises with a vision to make clean and affordable solar power accessible to every household and business across Uttar Pradesh.
+                    </p>
+                    <div class="pt-2 flex items-center justify-center sm:justify-start gap-4">
+                        <a href="tel:+919580325626" class="inline-flex items-center gap-1.5 bg-solarGreen hover:bg-solarDarkGreen text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow">
+                            <i class="fa-solid fa-phone"></i> +91 95803 25626
+                        </a>
+                        <a href="https://wa.me/919580325626?text=Hi%20Amit%20Ji,%20I%20want%20to%20consult%20regarding%20solar%20installation." target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 EXPERT TEAM MEMBERS GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Team Member 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-1.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarGreen shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/15803d/ffffff?text=Eng'">
+                    <h4 class="font-bold text-solarDark text-lg">Er. Rajesh Sharma</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Chief Technical Head</p>
+                    <p class="text-slate-500 text-xs mb-4">Oversees solar plant design, structural safety, and grid sync.</p>
+                    <a href="tel:+919876543211" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43211
+                    </a>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-2.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarDark shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/0f172a/ffffff?text=Sub'">
+                    <h4 class="font-bold text-solarDark text-lg">Priya Singh</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Subsidy & Portal Expert</p>
+                    <p class="text-slate-500 text-xs mb-4">Manages PM Surya Ghar portal registrations & bank transfers.</p>
+                    <a href="tel:+919876543212" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43212
+                    </a>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-3.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarYellow shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/ca8a04/ffffff?text=Sal'">
+                    <h4 class="font-bold text-solarDark text-lg">Manish Mishra</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Senior Sales Manager</p>
+                    <p class="text-slate-500 text-xs mb-4">Provides rooftop site surveys and customized cost estimates.</p>
+                    <a href="tel:+919876543213" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43213
+                    </a>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-4.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarGreen shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/16a34a/ffffff?text=Net'">
+                    <h4 class="font-bold text-solarDark text-lg">Alok Pandey</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">UPPCL Liaison Officer</p>
+                    <p class="text-slate-500 text-xs mb-4">Coordinates bi-directional net meter approvals with utilities.</p>
+                    <a href="tel:+919876543214" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43214
+                    </a>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-5.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-slate-600 shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/334155/ffffff?text=Ins'">
+                    <h4 class="font-bold text-solarDark text-lg">Vikas Yadav</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Installation Lead</p>
+                    <p class="text-slate-500 text-xs mb-4">Leads on-site mounting, wiring, and inverter commissioning.</p>
+                    <a href="tel:+919876543215" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43215
+                    </a>
+                </div>
+                <!-- Team Member 6 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-6.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarGreen shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/15803d/ffffff?text=Sup'">
+                    <h4 class="font-bold text-solarDark text-lg">Neha Tiwari</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Customer Support Lead</p>
+                    <p class="text-slate-500 text-xs mb-4">Handles post-installation service and maintenance queries.</p>
+                    <a href="tel:+919876543216" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43216
+                    </a>
+                </div>
+                <!-- Team Member 7 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-7.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarDark shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/0f172a/ffffff?text=Fin'">
+                    <h4 class="font-bold text-solarDark text-lg">Sandeep Gupta</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Loan & Finance Advisor</p>
+                    <p class="text-slate-500 text-xs mb-4">Assists customers with easy zero down-payment solar loans.</p>
+                    <a href="tel:+919876543217" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43217
+                    </a>
+                </div>
+                <!-- Team Member 8 -->
+                <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 shadow-sm hover:shadow-lg transition group">
+                    <img src="assets/team-8.jpg" alt="Team Member" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-2 border-solarYellow shadow group-hover:scale-105 transition" onerror="this.src='https://placehold.co/120x120/ca8a04/ffffff?text=Log'">
+                    <h4 class="font-bold text-solarDark text-lg">Deepak Verma</h4>
+                    <p class="text-solarGreen text-xs font-semibold uppercase tracking-wider mb-2">Logistics & Operations</p>
+                    <p class="text-slate-500 text-xs mb-4">Ensures timely dispatch of panels, inverters, and structures.</p>
+                    <a href="tel:+919876543218" class="inline-flex items-center gap-1.5 text-xs bg-slate-200 hover:bg-solarGreen hover:text-white text-slate-700 font-bold px-3.5 py-2 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43218
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT GALLERY WITH FILTER TABS -->
+    <section id="gallery" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-solarGreen font-bold text-sm tracking-wider uppercase bg-green-100 px-3 py-1 rounded-full">Project Portfolio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-solarDark mt-3 mb-4">Our Recent Solar Installations</h2>
+                <p class="text-slate-600">Explore our successfully commissioned solar projects across Lucknow and surrounding districts.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-2 sm:gap-4 mb-10 flex-wrap">
+                <button onclick="filterGallery('all')" class="gallery-btn active bg-solarGreen text-white px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition shadow-sm">All Projects</button>
+                <button onclick="filterGallery('residential')" class="gallery-btn bg-white text-slate-700 hover:bg-slate-200 px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition border border-slate-300">Residential</button>
+                <button onclick="filterGallery('commercial')" class="gallery-btn bg-white text-slate-700 hover:bg-slate-200 px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition border border-slate-300">Commercial</button>
+                <button onclick="filterGallery('industrial')" class="gallery-btn bg-white text-slate-700 hover:bg-slate-200 px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition border border-slate-300">Industrial</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+                <!-- Item 1 -->
+                <div class="gallery-item residential bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-1.jpg" alt="Residential Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/15803d/ffffff?text=5kW+Gomti+Nagar+Rooftop'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">5 kW Residential</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Gomti Nagar, Lucknow</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> On-grid rooftop with PM Surya Ghar subsidy</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item commercial bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-2.jpg" alt="Commercial Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=25kW+Aliganj+Commercial'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">25 kW Commercial</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Aliganj Industrial Area</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> Zero Bill Commercial Plant</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item residential bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-3.jpg" alt="Residential Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/16a34a/ffffff?text=3kW+Indira+Nagar+Home'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">3 kW Residential</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Indira Nagar, Lucknow</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> Net metering setup with UPPCL</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item industrial bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-4.jpg" alt="Industrial Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/334155/ffffff?text=50kW+Kanpur+Road+Plant'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">50 kW Industrial</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Kanpur Road, Lucknow</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> Heavy duty factory rooftop plant</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item commercial bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-5.jpg" alt="Commercial Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/ca8a04/ffffff?text=10kW+Hazratganj+Office'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">10 kW Commercial</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Hazratganj, Lucknow</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> Commercial rooftop solar office building</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="gallery-item residential bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="assets/project-6.jpg" alt="Residential Solar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/15803d/ffffff?text=8kW+Mahanagar+Villa'">
+                        <span class="absolute top-3 left-3 bg-solarDark/85 text-white text-xs px-3 py-1 rounded-lg backdrop-blur">8 kW Residential</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-solarDark text-lg mb-1">Mahanagar, Lucknow</h4>
+                        <p class="text-xs text-slate-500 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-solarGreen"></i> High efficiency monocrystalline system</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section id="map-section" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-solarGreen font-bold text-sm tracking-wider uppercase bg-green-50 px-3 py-1 rounded-full border border-green-200">Our Location</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-solarDark mt-3 mb-4">Visit Our Office in Lucknow</h2>
+                <p class="text-slate-600">Drop by our office or invite our survey engineers for an on-site evaluation of your rooftop.</p>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 relative h-[450px]">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.74950348705!2d80.946166!3d26.8467088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd088c7247fb%3A0x8ef4c17c5b6b107c!2sHazratganj%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & QUOTE SECTION -->
+    <section id="contact" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-solarYellow font-bold text-sm tracking-wider uppercase bg-yellow-500/10 px-3 py-1 rounded-full border border-yellow-500/30">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-4 mb-6">Ready to Switch to Solar? Book Your Free Site Survey Today!</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Our solar experts will visit your property in Lucknow or nearby districts, inspect your roof space and energy usage, and provide a detailed quotation with exact government subsidy calculations.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-solarGreen/20 border border-solarGreen/40 text-solarYellow rounded-xl flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Office Address</h4>
+                                <p class="text-slate-400 text-sm">AV Solar Enterprises, Near Hazratganj & Aliganj, Lucknow, Uttar Pradesh - 226020</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-solarGreen/20 border border-solarGreen/40 text-solarYellow rounded-xl flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Phone Number</h4>
+                                <p class="text-slate-400 text-sm">+91 95803 25626, +91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-solarGreen/20 border border-solarGreen/40 text-solarYellow rounded-xl flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Email Address</h4>
+                                <p class="text-slate-400 text-sm">avsolarenterprises@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="bg-white text-slate-800 p-8 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-solarDark mb-2">Request Instant Callback</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill out your details and choose your preferred contact method (WhatsApp or Email).</p>
+
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Full Name *</label>
+                            <input type="text" id="formName" required placeholder="e.g. Rajesh Kumar" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Mobile Number *</label>
+                                <input type="tel" id="formPhone" required placeholder="e.g. 9580325626" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address</label>
+                                <input type="email" id="formEmail" placeholder="e.g. user@gmail.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Monthly Bill (₹)</label>
+                                <select id="formBill" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen">
+                                    <option value="Below ₹2,000">Below ₹2,000</option>
+                                    <option value="₹2,000 - ₹5,000" selected>₹2,000 - ₹5,000</option>
+                                    <option value="₹5,000 - ₹10,000">₹5,000 - ₹10,000</option>
+                                    <option value="Above ₹10,000">Above ₹10,000</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">System Requirement</label>
+                                <select id="formSystem" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen">
+                                    <option value="1 kW">1 kW Residential</option>
+                                    <option value="2 kW">2 kW Residential</option>
+                                    <option value="3 kW" selected>3 kW Residential</option>
+                                    <option value="5 kW">5 kW Residential</option>
+                                    <option value="10 kW+">10 kW+ Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferred Contact Mode *</label>
+                            <select id="formMode" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen font-semibold text-solarGreen">
+                                <option value="whatsapp">Connect via WhatsApp</option>
+                                <option value="email">Send Email / Quote Request</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Address / Locality *</label>
+                            <textarea id="formAddress" rows="2" required placeholder="e.g. Gomti Nagar, Lucknow" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-solarGreen"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-solarGreen hover:bg-solarDarkGreen text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-sm"></i> Submit Inquiry
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="hidden mt-4 bg-green-50 text-solarGreen border border-green-200 p-3 rounded-xl text-xs text-center font-medium">
+                        Success! Processing your request...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 rounded-lg bg-solarGreen flex items-center justify-center text-white font-bold">
+                        <i class="fa-solid fa-solar-panel text-sm"></i>
+                    </div>
+                    <span class="text-xl font-extrabold text-white">AV <span class="text-solarGreen">SOLAR</span></span>
+                </div>
+                <p class="text-xs leading-relaxed mb-4">
+                    AV Solar Enterprises is Lucknow's trusted provider of residential and commercial solar EPC solutions, net metering approvals, and PM Surya Ghar subsidy assistance.
+                </p>
+                <div class="flex gap-3 text-white">
+                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-solarGreen transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-solarGreen transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="https://wa.me/919580325626" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-solarGreen transition"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#calculator" class="hover:text-white transition">Subsidy Calculator</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#team" class="hover:text-white transition">Our Team</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition">Project Gallery</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Our Services</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><span class="hover:text-white transition">Residential Rooftop Solar</span></li>
+                    <li><span class="hover:text-white transition">Commercial & Industrial Solar</span></li>
+                    <li><span class="hover:text-white transition">Hybrid & Off-Grid Inverters</span></li>
+                    <li><span class="hover:text-white transition">Solar Water Heaters</span></li>
+                    <li><span class="hover:text-white transition">PM Surya Ghar Subsidy</span></li>
+                    <li><span class="hover:text-white transition">Maintenance & AMC</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Service Locations</h4>
+                <p class="text-xs leading-relaxed mb-3">
+                    Lucknow, Barabanki, Unnao, Rae Bareli, Sitapur, Hardoi, Kanpur and across Uttar Pradesh.
+                </p>
+                <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 text-xs text-slate-300">
+                    <span class="text-solarYellow font-bold block mb-1">Working Hours:</span>
+                    Mon - Sat: 9:00 AM - 7:00 PM
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+            &copy; 2026 AV Solar Enterprises, Lucknow, UP. All Rights Reserved. Designed for Clean Energy Future.
+        </div>
+    </footer>
+
+    <!-- FIXED FLOATING BUTTONS -->
+    <a href="#home" class="fixed bottom-6 left-6 z-50 bg-slate-800 hover:bg-solarGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-xl transition transform hover:scale-110 border border-slate-700" title="Go to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="tel:+919580325626" class="bg-solarDark hover:bg-slate-800 text-solarYellow w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110 border-2 border-solarYellow" title="Call Us Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/919580325626?text=Hi%20AV%20Solar%20Enterprises,%20I%20want%20to%20know%20more%20about%20solar%20installation%20and%20subsidy%20in%20Lucknow." target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- External JavaScript File Link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
